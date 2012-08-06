@@ -21,7 +21,8 @@ try to implement and package predefined widgets themselves.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_datadir}/awesome/bashets
+install -d $RPM_BUILD_ROOT%{_datadir}/awesome/bashets
+install -d $RPM_BUILD_ROOT%{_datadir}/awesome/lib
 install %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/awesome/lib/bashets.lua
 
 %clean
